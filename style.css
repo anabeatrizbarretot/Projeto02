@@ -39,7 +39,6 @@ body::before {
   z-index: -1;
 }
 
-
 .container {
   width: 90%;
   max-width: 900px;
@@ -110,17 +109,17 @@ body::before {
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #002b5c;
+  background-color: #001f3f; 
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 0 10px rgba(0, 43, 92, 0.6);
+  box-shadow: 0 0 10px rgba(0, 31, 63, 0.6); 
 }
 
 .container__botao:hover {
-  background-color: #014a8a;
+  background-color: #003366; 
   transform: scale(1.05);
 }
 
