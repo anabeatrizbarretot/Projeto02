@@ -43,7 +43,7 @@ body::before {
 
 .container {
   width: 90%;
-  max-width: 400px;
+  max-width: 600px;
   padding: 1.5rem;
   border-radius: 20px;
   border: 1px solid #0D3B66;
