@@ -6,17 +6,24 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  overflow-y: auto; 
+}
+
 body {
   font-family: 'Orbitron', sans-serif;
+  min-height: 100vh;
   background: linear-gradient(#0a2342 0%, #041C32 33.33%, #021526 66.67%, #01080E 100%);
   background-image: url("code.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; 
+  padding: 2rem;
   position: relative;
   color: black;
 }
@@ -35,27 +42,30 @@ body::before {
 }
 
 .container {
-  width: 80%;
-  max-width: 1000px;
-  min-height: 60%;
-  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  padding: 1.5rem;
   border-radius: 20px;
   border: 1px solid #0D3B66;
   box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
   background-image: url("Ruido.png");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
 }
 
 h1 {
   font-size: 60px;
   margin-bottom: 1rem;
   color: #010c16;
+  text-align: center;
 }
 
 h2 {
   font-size: 30px;
   margin-bottom: 1rem;
   color: #011016;
+  text-align: center;
 }
 
 p, label {
@@ -68,6 +78,7 @@ form {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
+  width: 100%;
 }
 
 label {
