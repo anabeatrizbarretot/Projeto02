@@ -8,12 +8,11 @@
 
 html, body {
   height: 100%;
-  overflow-y: auto; 
+  overflow: hidden;
 }
 
 body {
   font-family: 'Orbitron', sans-serif;
-  min-height: 100vh;
   background: linear-gradient(#0a2342 0%, #041C32 33.33%, #021526 66.67%, #01080E 100%);
   background-image: url("code.png");
   background-repeat: no-repeat;
@@ -22,8 +21,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; 
-  padding: 2rem;
   position: relative;
   color: black;
 }
@@ -51,21 +48,18 @@ body::before {
   background-image: url("Ruido.png");
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(2px);
 }
 
 h1 {
   font-size: 60px;
   margin-bottom: 1rem;
   color: #010c16;
-  text-align: center;
 }
 
 h2 {
   font-size: 30px;
   margin-bottom: 1rem;
   color: #011016;
-  text-align: center;
 }
 
 p, label {
@@ -78,7 +72,6 @@ form {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
-  width: 100%;
 }
 
 label {
