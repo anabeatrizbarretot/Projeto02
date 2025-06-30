@@ -23,7 +23,7 @@ body {
   justify-content: center;
   padding: 2rem;
   position: relative;
-  color: black;
+  color: #fff;
 }
 
 body::before {
@@ -44,11 +44,12 @@ body::before {
   width: 90%;
   max-width: 900px;
   height: 80vh;
+  background-color: #021c3d;
   background-image: url("Ruido.png");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
-  border: 1px solid #0D3B66;
+  border: 1px solid #19325a;
   box-shadow: 4px 4px 20px rgba(1, 8, 14, 0.2);
   display: flex;
   align-items: center;
@@ -75,16 +76,16 @@ body::before {
 
 .container__texto h1 {
   font-size: 40px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .container__texto-azul {
-  color: #00aaff;
+  color: #0077ff;
 }
 
 .texto__paragrafo {
   font-size: 20px;
-  color: #ccc;
+  color: #d0d8e0;
   margin-top: 10px;
 }
 
@@ -109,20 +110,22 @@ body::before {
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #0a2342;
+  background-color: #002b5c;
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(0, 43, 92, 0.6);
 }
 
 .container__botao:hover {
-  background-color: #021c3d;
+  background-color: #014a8a;
+  transform: scale(1.05);
 }
 
 .container__botao:disabled {
-  background-color: gray;
+  background-color: #555e6b;
   cursor: not-allowed;
 }
 
